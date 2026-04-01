@@ -39,7 +39,6 @@ class WaveshareIOCH32V003Component : public Component,
   bool digital_read_cache(uint8_t pin) override;
   void digital_write_hw(uint8_t pin, bool value) override;
 
-  float get_loop_priority() const override;
 
   // --- I2C Robustness Helpers ---
   bool write_register_with_retry_(uint8_t a_register, uint8_t value);
